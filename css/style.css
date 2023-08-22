@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    margin: 5rem auto;
+    background: linear-gradient(144deg, #3E708E 0%, #64969B 84.65%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Space Grotesk', sans-serif;
+
+}
+
+section {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: #000000;
+}
+
+.left-container {
+    border-radius: 20px 0px 0px 20px;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem 3rem 6rem 3rem;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-background {
+    background-image: url('../img/stroke.svg');
+    background-repeat: no-repeat;
+    background-size: 80%;
+
+}
+
+.logo {
+    font-size: 25px;
+    margin-right: auto;
+    background-image: linear-gradient(90deg, #496F74, #6E9195, #2D4F61);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+h2 {
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+
+form {
+    max-width: 300px;
+}
+
+.password-hint {
+    color: #CCC;
+    font-size: 12px;
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+
+}
+
+input {
+    width: 100%;
+    height: 35px;
+    flex-shrink: 0;
+    margin-bottom: 2rem;
+    border-radius: 4px;
+    background: none;
+    border: 1px solid #CCC;
+    box-shadow: 0px 2px 2px 2px rgba(204, 204, 204, 0.10);
+    text-indent: 1rem;
+}
+
+select {
+    width: 100%;
+    height: 35px;
+    flex-shrink: 0;
+    margin-bottom: 2rem;
+    border-radius: 4px;
+    background: none;
+    border: 1px solid #CCC;
+    box-shadow: 0px 2px 2px 2px rgba(204, 204, 204, 0.10);
+}
+
+input.password {
+    margin-bottom: 0;
+}
+
+::placeholder {
+    color: #CCCCCC;
+    font-size: 12px;
+}
+
+/* walidacja */
+
+input.valid {
+    border-color: #00cc00;
+}
+
+input.invalid {
+    border-color: #cc0000;
+}
+
+.error-message {
+    color: #cc0000;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: none;
+    width: 100%;
+}
+
+.success-message {
+    width: 100%;
+    color: #00cc00;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: none;
+}
+
+label {
+    display: block;
+    color: #000;
+    font-size: 1rem;
+    line-height: 0rem;
+}
+
+label span {
+    color: #CCC;
+    font-size: 12px;
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+}
+
+#location {
+    width: 100%;
+    height: 35px;
+    flex-shrink: 0;
+    margin-bottom: 1rem;
+}
+
+.button {
+    max-width: 300px;
+    width: 100%;
+    background-color: #27485D;
+    border: none;
+    color: white;
+    padding: 12px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #1E3E57;
+}
+
+.login-hint>p {
+    color: #CCC;
+    font-size: 16px;
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+
+}
+
+.login-hint a {
+    color: #476D73;
+}
+
+.login-hint a:hover {
+    color: #1E3E57;
+}
+
+.right-container {
+    border-radius: 0px 20px 20px 0px;
+    background: linear-gradient(142deg, #517879 1.09%, #1E3E57 100%);
+    padding: 2rem 6rem 8rem 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    align-items: center;
+    align-items: flex-end;
+    justify-content: flex-start;
+
+}
+
+.right-container h1 {
+    width: 360px;
+    color: #FFF;
+    font-size: 3.5rem;
+    line-height: 5rem;
+    font-weight: 700;
+    text-shadow: 3px 2px #ffffff31;
+}
+
+.right-container span {
+    font-size: 1rem;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+}
+
+li a:hover {
+    color: #64969B;
+}
+
+footer>p {
+    color: #ffffff;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
+footer a {
+    color: #ffffff;
+}
+
+footer a:hover {
+    color: #92dde4;
+}
+
+@media only screen and (max-width: 1000px) {
+    .left-container {
+        border-radius: 15px;
+        width: 90%;
+    }
+
+    .right-container {
+        display: none;
+    }
+}

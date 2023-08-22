@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="script.js"></script>
+    <title>Kreativ</title>
+</head>
+
+<body>
+    <section>
+        <div class="left-container left-background">
+            <div class="logo">
+                <h3>Kreativ</h3>
+            </div>
+            <form id="form" action="/" method="GET">
+                <h2>Lets get you started!</h2>
+                <div id="message" class="error-message"></div><br/>
+                <div id="success-message" class="success-message"></div><br/>
+                <label for="name">Name</label><br>
+                <input type="text" id="name" class="name" name="name" placeholder="Ade Tiger" minlength="3" required>
+                
+                <label for="email">Email address</label><br>
+                <input type="email" id="email" class="email" name="email" autocomplete="email" placeholder="yourname@email.com" required>
+                
+                <label for="phone">Phone number</label><br>
+                <input type="tel" id="phone" class="phone" name="phone" autocomplete="tel" placeholder="800 2738 9700" required>
+                
+                <label for="password">Create password</label><br>
+<input type="password" id="password" class="password" name="password" placeholder='••••••••' minlength="6" maxlength="25" required>
+<div class="password-hint">
+    <p>Password must contain a minimum of 6 characters<br>Password must contain at least one uppercase letter, one symbol (e.g., @, !), and one number.</p>
+</div>
+                
+                <label for="location">Location <span>(optional)</span></label><br>
+                <select id="location" name="location">
+                    <option value="Ireland">Ireland</option>
+                    <option value="Poland">Poland</option>
+                    <option value="England">England</option>
+                    <option value="Germany">Germany</option>
+                </select>
+                
+                <button class="button" type="submit">Sign Up</button>
+            </form>
+            <div class="login-hint">
+                <p>Already a user? <a href="#">Login</a></p>
+            </div>
+        </div>
+
+        <div class="right-container">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <h1>“Creativity is intelligence having fun”<br><span>~ Albert Einstein</span></h1>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright &copy; 2023 All Rights Reserved by <a href="#">Michal Lekacz</a>.
+    </footer>
+</body>
+
+</html>
